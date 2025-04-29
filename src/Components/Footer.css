@@ -1,0 +1,81 @@
+footer{
+    background-color: #292929;
+  }
+  
+  .footerUst{
+    display: flex;
+    gap:20px;
+    margin-left: 50px;
+    justify-content: space-around;
+    padding-top: 20px;
+  }
+  
+  .footerUst-left{
+    gap:20px;
+  }
+  
+  .iletisim{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    margin-top: 10px;
+    color:#FAF7F2
+  }
+  
+  .footerUst-right{
+    font-family: Barlow;
+    font-size: 18px;
+  }
+  
+  .footerUst-right p{
+    font-family: Barlow;
+    font-size: 24px;
+    display: flex;
+    justify-content: flex-start;
+    color: #FAF7F2;
+  }
+  
+  .footerUst-right h2{
+    font-family: Barlow;
+    font-size: 24px;
+    color: #FAF7F2;
+  }
+  
+  .Instagram{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+  }
+  
+  .Instagram p{
+    color:#FAF7F2;
+    font-family: Barlow;
+    font-size: 24px;
+  }
+  
+  .InsPic{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 50%;
+    padding-top: 20px;
+  }
+  
+  
+  .footerAlt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-top: 1px solid #5F5F5F ;
+  }
+  
+  .footerAlt-Y{
+    font: 16px;
+    font-family: Barlow;
+    display: flex;
+    justify-content: flex-start;
+    color: #FAF7F2;
+    margin-left: 120px;
+  }
