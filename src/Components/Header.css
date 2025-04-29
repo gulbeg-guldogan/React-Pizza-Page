@@ -1,0 +1,41 @@
+header{
+    background: url("../assets/iteration-1/home-banner.png");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+    color: #FDC913;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header img{
+    padding:50px;
+  }
+  
+  header button{
+    border-radius: 50px;
+    width: 10rem;
+    height: 54px;
+    border-radius: 60px;
+    background-color: #FDC913;
+    margin: 30px;
+  }
+  
+  .firsat{
+    font-family: "Satisfy";
+    margin: 20px;
+    padding: 20px;
+    font-size: 40px;
+  }
+  
+  .kod{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: "Roboto-Condensed";
+    color: white;
+    align-content: center;
+    text-align: center;
+  
+  }
