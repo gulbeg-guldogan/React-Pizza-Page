@@ -1,6 +1,5 @@
 import React from 'react';
-import '../Components/Sec-3.css';
-
+import '../Components/Layout.css';
 export default function EnCopk() {
     return (
         

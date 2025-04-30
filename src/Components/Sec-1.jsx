@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Components/Sec-1.css';
+import '../Components/Layout.css';
 
 export default function NavMenu() {
     return (

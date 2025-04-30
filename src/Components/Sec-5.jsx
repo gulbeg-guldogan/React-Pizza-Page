@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Components/Sec-5.css';
+import '../Components/Layout.css';
 
 export default function Orta3() {
     

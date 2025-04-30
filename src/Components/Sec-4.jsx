@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Components/Sec-4.css';
+import '../Components/Layout.css';
 
 export default function ButtonMenu() {
     return (
