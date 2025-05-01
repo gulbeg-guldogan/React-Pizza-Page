@@ -16,8 +16,8 @@ function App() {
     <>
     <div>
       <Switch>
-        <Route exact path="/">
 
+        <Route exact path="/">
         <Header />
         <NavMenu />
         <Cards />
@@ -25,11 +25,12 @@ function App() {
         <ButtonMenu />
         <Orta3 />
         <Footer />
-
         </Route>
+        
         <Route exact path="/siparis">
           <SiparisFormu />
         </Route>
+        
       </Switch>
    
     </div>

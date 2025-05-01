@@ -3,6 +3,7 @@ body{
     padding: 0;
     width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
   }
   
   header{
@@ -304,6 +305,87 @@ body{
     color: #FAF7F2;
     margin-left: 120px;
   }
+  
+  .SiparisFormu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 10px;
+  }
+
+.SipForm-Ust{
+    display: flex;
+    flex-direction: column;
+    background-color: #CE2829;
+    width: 100vw;
+}
+
+.logoTekn{
+  background-image: url("../assets/iteration-1/logo.svg");
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 20vh;
+  background-position: center;
+}
+
+.breadCrumb{
+  margin-left: 50px;
+}
+
+.FormKap{
+    width: 40%;
+    justify-content: center;
+
+}
+
+.zipi{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 80%;
+}
+
+.zibi{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.checkBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chech-h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.checkBoxes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.radio-select{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+.radio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
   
   @media (max-width: 590px) {
     body {
