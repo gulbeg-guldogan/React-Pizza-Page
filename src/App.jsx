@@ -7,16 +7,28 @@ import ButtonMenu from './Components/Sec-4.jsx'
 import Orta3 from './Components/Sec-5.jsx'
 import Footer from './Components/Footer.jsx'
 import SiparisFormu from './Components/SiparisFormu.jsx'
-import SiparisAlındı from './Components/SiparisAlındı.jsx'
-import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min.js'
+import SiparisAlindi from './Components/SiparisAlındı.jsx'
+import { BrowserRouter, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min.js'
+import { useState } from 'react'
+
+const initialForm = {
+  Boyut: '',
+  Hamur: '',
+  EkMalzeme: [],
+  SiparisNotu: '',
+  Adet: 1,
+};
+
 
 function App() {
+  const [form, setForm] = useState(initialForm)
   
 
   return (
     <>
     <div>
-      <Switch>
+      <BrowserRouter>
+        <Switch>
 
         <Route exact path="/">
         <Header />
@@ -27,17 +39,19 @@ function App() {
         <Orta3 />
         <Footer />
         </Route>
-        
+
         <Route exact path="/siparis">
-          <SiparisFormu />
+          <SiparisFormu form={form} setForm={setForm}/>
         </Route>
 
         <Route exact path="/orderSuccess">
-          <SiparisAlındı />
+          <SiparisAlindi />
         </Route>
           
-        
-      </Switch>
+
+        </Switch>
+      </BrowserRouter>
+     
    
     </div>
       

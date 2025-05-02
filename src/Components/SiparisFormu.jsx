@@ -3,21 +3,12 @@ import '../Components/Layout.css';
 import { Breadcrumb, BreadcrumbItem, Button, Form, FormGroup, Input, Label } from 'reactstrap';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
-const initialForm = {
-    Boyut: '',
-    Hamur: '',
-    EkMalzeme: [],
-    SiparisNotu: '',
-    Adet: '',
-  };
-
-export default function SiparisFormu() {
-    const [form, setForm] = useState(initialForm)
+export default function SiparisFormu({form, setForm}) {
     const history = useHistory();
     const [adet, setAdet] = useState(1);
     const [error, setError] = useState("");
+    
 
     const secimlerFiyati = form.EkMalzeme.length * 5;
     const urunFiyati = 85.50;
@@ -82,15 +73,18 @@ export default function SiparisFormu() {
         const postData = {
           ...form,
           Adet: adet,
-          ToplamFiyat: toplam.toFixed(2),
+          secimlerFiyati,
+          toplam,
         };
       
-        axios.post('https://reqres.in/api/pizza', postData)
-          .then((res) => {
-            console.log("Sipariş Gönderildi:", res.data);
-            setForm(initialForm);
-            setAdet(1);
-            history.push("/orderSuccess");
+        axios.post('https://reqres.in/api/pizza', postData,{
+          headers: {
+            'x-api-key': 'reqres-free-v1'
+          }
+        } )
+          .then(() => {
+            console.log("Sipariş Gönderildi:", postData);
+            history.push("/orderSuccess", postData);
           })
           .catch((err) => {
             console.error("Sipariş Hatası:", err);
@@ -149,7 +143,6 @@ export default function SiparisFormu() {
                             value="Orta"
                             onChange={handleChange}
                             checked={form.Boyut==="Orta"}/>
-                            
                             Orta
                             </Label>
                     
@@ -234,30 +227,26 @@ export default function SiparisFormu() {
                         value={form.SiparisNotu}
                         />
                     </FormGroup>
+                    <hr />
 
                     <div className='buttons'>
                         <div className='art-azl'>
                             <Button color="warning" onClick={azalt} >-</Button>
-                            <p value={form.adet}>{adet}</p>
+                            <p value={adet}>{adet}</p>
                             <Button color="warning" onClick={arttir}>+</Button>
                         </div>
                         
                         <div className='siparisVer'>
                             <p>Sipariş Toplamı</p>
-                            <p>Seçimler: {secimlerFiyati.toFixed(2)}₺</p>
-                            <p style ={{color:"red"}}>Toplam: {toplam.toFixed(2)}₺</p>
-                            <Link to="/orderSuccess">
+                            <p>Seçimler: {secimlerFiyati}₺</p>
+                            <p style ={{color:"red"}} name= "toplam" value={form.Toplam}>Toplam: {toplam}₺</p>
                             <Button type="submit" color="warning" className='sipVerBut'>SİPARİŞ VER</Button>
-                            </Link>
                         </div>
                     </div>
                     
                 </Form>
 
             </div>
-
-              
-
         </section>
 
       );
