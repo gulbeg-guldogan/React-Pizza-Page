@@ -333,24 +333,39 @@ body{
   margin-left: 50px;
 }
 
-.FormKap{
-    width: 40%;
-    justify-content: center;
-
+.withoutHeader{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 2rem auto;
 }
 
 .zipi{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-wrap: nowrap;
-    width: 80%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 30vw;
 }
 
-.zibi{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.zibik{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 30vw;
+}
+
+.puan{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+}
+
+
+.FormKap{
+    width: 40%;
+    justify-content: center;
+    width: 100%;
 }
 
 .checkBox{
@@ -366,11 +381,9 @@ body{
 }
 
 .checkBoxes{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
 .radio-select{
@@ -384,6 +397,51 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 2rem auto;
+}
+
+.art-azl{
+  display: flex;
+  flex-direction: row;
+  height: 40px;  
+  width: 1rem auto;
+  border-radius: 25px;
+}
+
+.art-azl p{
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border:1px solid lightgrey;
+  align-items: center;
+  justify-content: center;
+}
+
+.siparisVer{
+  border: 1px solid grey;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  border-radius: 5px;
+  text-align: center;
+}
+.siparisVer p{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sipVerBut{
+  width: auto;
 }
 
   
