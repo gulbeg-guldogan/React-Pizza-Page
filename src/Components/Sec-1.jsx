@@ -3,7 +3,7 @@ import '../Components/Layout.css';
 
 export default function NavMenu() {
     return (
-        <section className="Sec-1">
+      <section className="Sec-1">
         <nav className="nav-gour">
           <div className="nav-group">
             

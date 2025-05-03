@@ -109,7 +109,7 @@ export default function SiparisFormu({form, setForm}) {
                 <div className='zipi'>
                         <h1>Position Absolute Acı Pizza</h1>
                     <div className='zibik'>
-                        <p>85.50₺</p>
+                        <p><strong>85.50₺</strong></p>
                         <div className='puan'>
                             <p>4.9</p>
                             <p>(200)</p>

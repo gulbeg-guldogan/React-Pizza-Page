@@ -447,9 +447,10 @@ body{
 .OrderSuccess{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   background-color: #CE2829;
   color:#FAF7F2;
+  height: 100vh;
 }
 
 .FotAl{
@@ -477,6 +478,11 @@ body{
 
 .SipAlMes{
   font-family: "Roboto Condensed";
+  border-bottom: 1px solid #FAF7F2;
+  padding: 20px;
+  width: 20vw;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .PosPiz{
@@ -516,6 +522,7 @@ body{
     body {
       width: 100vw;
       height: auto;
+      overflow-x: hidden;
     }
   
     header {
@@ -523,8 +530,9 @@ body{
       height: 100vh;
       padding: 20px;
       margin: 0;
-      width: 100%;
+      width: 100vw;
       gap: 10px;
+
     }
   
     header img {
@@ -604,7 +612,8 @@ body{
     }
   
     .footerUst {
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
       gap: 50px;
       margin: 0;
       padding:20px 20px;
@@ -620,5 +629,36 @@ body{
       gap: 10px;
       width: 100%;
       padding-top: 20px;
+    }
+
+    .SiparisFormu{
+      width: 100vw;
+      height: auto;
+    }
+
+    .withoutHeader{
+      width: 90vw;
+    }
+
+    .zipi{
+      width: 50vw;
+      font-size: 0.8rem;
+    }
+
+    .buttons{
+      display: flex;
+      flex-direction: column;
+      width: 70vw;
+    }
+
+    .OrderSuccess{
+      width: 100vw;
+      height: auto;
+    }
+    
+    .SipTopDet{
+      display: flex;
+      flex-direction: row;
+      width: 80vw;
     }
   } 

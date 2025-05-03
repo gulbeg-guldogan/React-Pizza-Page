@@ -29,13 +29,10 @@ export default function SiparisAlindi() {
             <h1>Sipariş Alındı!</h1>
           </div>
 
-           <hr />
-          
           <div className='PosPiz'>
             <p>Position Absolute Acı Pizza</p>
           </div>
           
-
           <div className='SipAlDet'>
             <p>Boyut:  <strong>{data.Boyut}</strong> </p> 
             <p>Hamur: <strong>{data.Hamur}</strong></p>
@@ -43,15 +40,11 @@ export default function SiparisAlindi() {
             <p>Sipariş Notu:    <strong>{data.SiparisNotu}</strong></p>
           </div>
 
-          
           <div className='SipTopAl'>
             <p>Sipariş Toplamı</p>
             <p>Seçimler:{data.EkMalzeme.length * 5}₺</p>
             <p>Toplam:{data.toplam}₺</p>
           </div>
-
-
-
 
           <Button color="warning" onClick={goHome}>Ana Sayfaya Dön</Button>
         </div>
