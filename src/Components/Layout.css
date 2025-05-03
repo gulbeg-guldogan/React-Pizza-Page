@@ -511,11 +511,36 @@ body{
   border-radius: 8px;
 }
 
-.SipTopAl p {
-  font-weight: bold;
-  margin: 6px 0;
-  align-content: space-between;
+.SipTopAl  {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
 }
+
+.SipSipTop{
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px;
+  margin-left: 60px;
+}
+
+.SipSec {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+
+.SipTop{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 10px;
+}
+
+
 
   
   @media (max-width: 590px) {

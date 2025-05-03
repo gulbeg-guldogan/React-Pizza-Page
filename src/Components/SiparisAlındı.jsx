@@ -41,9 +41,21 @@ export default function SiparisAlindi() {
           </div>
 
           <div className='SipTopAl'>
-            <p>Sipariş Toplamı</p>
-            <p>Seçimler:{data.EkMalzeme.length * 5}₺</p>
-            <p>Toplam:{data.toplam}₺</p>
+            <div className='SipSipTop'>
+            <p><strong>Sipariş Toplamı</strong></p>
+            </div>
+            
+
+            <div className='SipSec'>
+            <p><strong>Seçimler:</strong></p> 
+            <p><strong>{data.EkMalzeme.length * 5}₺</strong></p>
+            </div>
+
+            <div className='SipTop'>
+            <p><strong>Toplam:</strong></p>  
+            <p><strong>{data.toplam}₺</strong></p>
+            </div>
+            
           </div>
 
           <Button color="warning" onClick={goHome}>Ana Sayfaya Dön</Button>
