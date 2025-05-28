@@ -6,17 +6,17 @@ export default function Footer() {
         <footer className="Foot-Gen">
         <div className="footerUst">
           <div className="footerUst-left">
-            <img src="../src/assets/iteration-2/footer/logo-footer.svg"/>
+            <img src="/assets/iteration-2/footer/logo-footer.svg"/>
             <div className="iletisim">
-              <img src="../src/assets/iteration-2/footer/icons/icon-1.png"/>
+              <img src="/assets/iteration-2/footer/icons/icon-1.png"/>
               <p>341 Londonderry Road,<br/> Istanbul Türkiye</p>
               </div>
               <div className="iletisim">
-                <img src="../src/assets/iteration-2/footer/icons/icon-2.png"/>
+                <img src="/assets/iteration-2/footer/icons/icon-2.png"/>
                 <p>aciktim@teknolojikyemekler.com</p>
               </div>
               <div className="iletisim">
-                <img src="../src/assets/iteration-2/footer/icons/icon-3.png"/>
+                <img src="/assets/iteration-2/footer/icons/icon-3.png"/>
                 <p>+90 216 123 45 67</p>
               </div>
           </div>
@@ -32,12 +32,12 @@ export default function Footer() {
           <div className="Instagram">
             <p>Instagram</p>
             <div className="InsPic">
-                <img src="../src/assets/iteration-2/footer/insta/li-0.png"/>
-                <img src="../src/assets/iteration-2/footer/insta/li-1.png"/>
-                <img src="../src/assets/iteration-2/footer/insta/li-2.png"/>
-                <img src="../src/assets/iteration-2/footer/insta/li-3.png"/>
-                <img src="../src/assets/iteration-2/footer/insta/li-4.png"/>
-                <img src="../src/assets/iteration-2/footer/insta/li-5.png"/>
+                <img src="/assets/iteration-2/footer/insta/li-0.png"/>
+                <img src="/assets/iteration-2/footer/insta/li-1.png"/>
+                <img src="/assets/iteration-2/footer/insta/li-2.png"/>
+                <img src="/assets/iteration-2/footer/insta/li-3.png"/>
+                <img src="/assets/iteration-2/footer/insta/li-4.png"/>
+                <img src="/assets/iteration-2/footer/insta/li-5.png"/>
             </div>
           </div>
   

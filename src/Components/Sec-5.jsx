@@ -6,7 +6,7 @@ export default function Orta3() {
     return (
         <section className="orta3lu">
         <div className="pizzalar">
-          <img src="../src/assets/iteration-2/pictures/food-1.png"/>
+          <img src="/assets/iteration-2/pictures/food-1.png"/>
           <h3>Terminal Pizza</h3>
           <div className="fiyatPuan">
             <p>4.9</p>
@@ -16,7 +16,7 @@ export default function Orta3() {
         </div>
 
         <div className="pizzalar">
-          <img src="../src/assets/iteration-2/pictures/food-2.png"/>
+          <img src="/assets/iteration-2/pictures/food-2.png"/>
           <h3>Position Absolute Acı Pizza</h3>
           <div className="fiyatPuan">
             <p>4.9</p>
@@ -26,7 +26,7 @@ export default function Orta3() {
         </div>
 
         <div className="pizzalar">
-          <img src="../src/assets/iteration-2/pictures/food-3.png"/>
+          <img src="/assets/iteration-2/pictures/food-3.png"/>
           <h3>useEffect Tavuklu Burger</h3>
           <div className="fiyatPuan">
             <p>4.9</p>
