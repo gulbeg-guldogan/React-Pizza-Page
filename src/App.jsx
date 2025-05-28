@@ -19,11 +19,9 @@ const initialForm = {
   Adet: 1,
 };
 
-
 function App() {
   const [form, setForm] = useState(initialForm)
   
-
   return (
     <>
     <div>
